@@ -13,3 +13,4 @@ def character1_check():
         character1_check
 character1_check
 print(P1_character1 + "\'s moves are," + P1_character1_move1 + ", " + P1_character1_move2 +", " + P1_character1_move3 + ", " + P1_character1_move4 + ". ")
+print('yuh')
