@@ -1,15 +1,24 @@
-allCharacters = 'Omega'
+all_characters = ['Omega']
 print("current characters are:")
-print allCharacters
-P1_character1 = input("what's your first character going to be?")
+move1 = 'N/A'
+move2 = 'N/A'
+move3 = 'N/A'
+move4 = 'N/A'
+
+
 def character1_check():
-    #checking what character is and what moves should be
-    if P1_character1 == ("Omega".lower()):
-        P1_character1_move1 = "Dark Slash"
-        P1_character1_move2 = "Shadow Strike"
-        P1_character1_move3 = "Blade Spin"
-        P1_character1_move4 = "Dark Charge" 
+    global move1
+    global move2
+    global move3
+    global move4
+    P1_character1 = raw_input("what's your first character going to be?")
+    if P1_character1 in all_characters:
+        if P1_character1 == 'Omega'.lower():
+            move1 = 'Dark Slash'
+            move2 = 'Shadow Strike'
+            move3 = 'Blade Spin'
+            move4 = 'Dark Charge'
+    print('{}\'s moves are: {}, {}, {}, and {}.'.format(P1_character1, move1, move2, move3, move4))
     else:
-        character1_check
-character1_check ()
-print(P1_character1 + "\'s moves are," + P1_character1_move1 + ", " + P1_character1_move2 +", " + P1_character1_move3 + ", " + P1_character1_move4 + ". ")
+        character1_check()
+character1_check()
